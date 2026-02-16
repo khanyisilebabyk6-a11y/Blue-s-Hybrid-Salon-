@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2196f3, #ff4fa3);
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 320px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 15px;
+    color: black;
+}
+
+.company-name {
+    font-size: 32px;
+}
+
+.heart-blue, .heart-pink {
+    font-size: 28px;
+}
+
+input, select {
+    padding: 10px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 12px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+}
+
+.fresha-btn {
+    background: #ff4fa3;
+    color: white;
+}
+
+#bookingList {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#bookingList li {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}

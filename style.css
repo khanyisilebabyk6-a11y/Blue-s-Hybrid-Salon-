@@ -1,64 +1,92 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #2196f3, #ff4fa3);
-    color: black;
-    text-align: center;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #1e90ff, #ff69b4); /* Blue & Pink gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
 }
 
 .container {
-    width: 320px;
-    margin: 50px auto;
-    padding: 25px;
-    border-radius: 15px;
-    color: black;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
+/* Company Name */
 .company-name {
-    font-size: 32px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.heart-blue, .heart-pink {
-    font-size: 28px;
+/* Booking Info */
+.booking-info {
+  margin-bottom: 25px;
 }
 
-input, select {
-    padding: 10px;
-    width: 90%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 8px 0;
+.booking-info label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-button {
-    padding: 12px;
-    width: 95%;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
+.booking-info input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
-.whatsapp-btn {
-    background: #25D366;
-    color: white;
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
+.btn {
+  display: block;
+  padding: 12px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Fresha / Services Button */
 .fresha-btn {
-    background: #ff4fa3;
-    color: white;
+  background: linear-gradient(to right, #ff69b4, #1e90ff); /* Pink to Blue gradient */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-#bookingList {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    margin-top: 10px;
+.fresha-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
 }
 
-#bookingList li {
-    border-bottom: 1px solid #ccc;
-    padding: 5px 0;
+/* Contact Info */
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Thank You Message */
+.thank-you {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }

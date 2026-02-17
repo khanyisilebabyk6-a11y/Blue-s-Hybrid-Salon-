@@ -1,63 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blue's Hybrid Salon</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue's Hybrid Salon</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="container">
-
-    <!-- Company Name -->
+  <div class="container">
     <h1 class="company-name">
-        <span class="heart-blue">💙</span>
-        <b><i>Blue's Hybrid Salon</i></b>
-        <span class="heart-pink">💖</span>
+      💙 <i><b>Blue's Hybrid Salon</b></i> 💖
     </h1>
 
-    <!-- Email & Contact -->
-    <p>Email: blueshybridsalon@gmail.com</p>
-    <p>Contact: +27 606 614 664</p>
+    <div class="booking-info">
+      <label for="booking-date">Book Date:</label>
+      <input type="date" id="booking-date" disabled value="2026-02-17">
+      
+      <label for="booking-time">Time Slot:</label>
+      <input type="time" id="booking-time" disabled value="10:00">
+    </div>
 
-    <h2>Book Appointment</h2>
+    <div class="buttons">
+      <!-- Only Fresha button remains -->
+      <a href="https://www.fresha.com/a/blues-hybrid-salon-pretoria-753-sannie-street-z00qcslo/booking?menu=true&share=true&pId=1343240&utm_content=link_in_bio&utm_medium=social&utm_source=ig&cartId=36cf47b2-e802-4363-9384-c5c9255f06c9&fbclid=PAb21jcAQAJa1leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeLPx7N6eGx8BF2u8uj1mN-d0XXf7FPiM1b0212aCmQrL32p_HU_weoZtiiow_aem_QJc-rcI289ruoOkV5R3I_Q" 
+         target="_blank" class="btn fresha-btn">
+        Book via Fresha
+      </a>
+    </div>
 
-    <!-- Booking Form -->
-    <form id="bookingForm">
-        <input type="text" id="name" placeholder="Enter your name (optional)"><br><br>
-        <input type="email" id="email" placeholder="Enter your email (optional)"><br><br>
+    <div class="contact-info">
+      <p>Email: blueshybridsalon@gmail.com</p>
+      <p>Contact: +27 606 614 664</p>
+    </div>
 
-        <input type="date" id="date" placeholder="Book Date" required><br><br>
+    <p class="thank-you">Thank you for booking!</p>
+  </div>
 
-        <select id="timeSlot" required>
-            <option value="">Select Time Slot</option>
-        </select><br><br>
-
-        <button type="submit">Book Now</button>
-    </form>
-
-    <!-- Confirmation Message -->
-    <p id="message"></p>
-
-    <!-- WhatsApp & Fresha Buttons -->
-    <a id="whatsappLink" href="#" target="_blank">
-        <button class="whatsapp-btn">Book via WhatsApp</button>
-    </a>
-
-    <br><br>
-
-    <a href="https://www.fresha.com/a/blues-hybrid-salon-pretoria-753-sannie-street-z00qcslo/booking?menu=true&share=true&pId=1343240&utm_content=link_in_bio&utm_medium=social&utm_source=ig"
-       target="_blank">
-        <button class="fresha-btn">Book via Fresha</button>
-    </a>
-
-    <!-- Booked Dates & Times -->
-    <h3>Booked Dates & Times</h3>
-    <ul id="bookingList"></ul>
-
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
